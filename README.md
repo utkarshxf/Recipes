@@ -1,7 +1,7 @@
 <h1 align="center">Recipes</h1>
 
 <p align="center">  
-Recipes App demonstrates modern Android development Jetpack and Material Design.
+Recipes App demonstrates modern Android development using Jetpack and Material Design.
 </p>
 </br>
 
