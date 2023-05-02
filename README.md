@@ -9,7 +9,7 @@ UI in compose
 - [dribbble](https://dribbble.com/shots/11298569-Recipes-App-Design/): for designing UI.
 ![image](https://user-images.githubusercontent.com/78771861/235626523-f6984371-6a94-4884-89f8-2da2e4ebe3b0.png)
 
-Newify using the material3 for creating UI<br>
+Recipes using the material3 for creating UI<br>
 
 
 ## Find this repository useful? :heart:
