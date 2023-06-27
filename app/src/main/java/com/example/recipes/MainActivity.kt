@@ -125,17 +125,18 @@ fun ParallaxToolbar(recipe: Recipe,scrollState: LazyListState) {
         contentPadding = PaddingValues(),
         backgroundColor = Color.White,
         modifier = Modifier
-            .height(
-                AppBarExpendedHeight
-            )
+            .height(AppBarExpendedHeight)
             .offset { IntOffset(x = 0, y = -offset) },
         elevation = if (offset == maxOffset) 4.dp else 0.dp
 
     ) {
         Column {
-            Box(Modifier.height(imageHeight).graphicsLayer {
-                alpha = 1f - offsetprogress
-            }) {
+            Box(
+                Modifier
+                    .height(imageHeight)
+                    .graphicsLayer {
+                        alpha = 1f - offsetprogress
+                    }) {
                 Image(
                     painter = painterResource(id = R.drawable.strawberry_pie_1),
                     contentDescription = null,
@@ -187,8 +188,9 @@ fun ParallaxToolbar(recipe: Recipe,scrollState: LazyListState) {
                     text = recipe.title,
                     fontSize = 26.sp,
                     fontWeight = FontWeight.Bold,
-                    modifier = Modifier.padding(horizontal = (16+28*offsetprogress).dp)
-                        .scale(1f-0.25f*offsetprogress)
+                    modifier = Modifier
+                        .padding(horizontal = (16 + 28 * offsetprogress).dp)
+                        .scale(1f - 0.25f * offsetprogress)
                 )
             }
         }
@@ -465,7 +467,7 @@ fun BasicInfo(recipe: Recipe) {
 fun InfoColumn(@DrawableRes iconResource: Int,text:String) {
     Column(horizontalAlignment = Alignment.CenterHorizontally) {
         Icon(
-            painter = painterResource(id = iconResource),
+            painter = (painterResource(id = iconResource)),
             contentDescription = null,
             tint = Pink,
             modifier = Modifier.height(24.dp)
