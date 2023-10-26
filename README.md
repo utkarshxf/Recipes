@@ -1,4 +1,4 @@
-<h1 align="center">Recipes</h1>
+<h1 align="center">Food Delivery App</h1>
 
 <p align="center">  
 Recipes App demonstrates modern Android development using Jetpack and Material Design.
